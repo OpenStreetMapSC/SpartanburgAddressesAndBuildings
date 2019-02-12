@@ -1,0 +1,4 @@
+python ../../ogr2osm/ogr2osm.py structurepoints.dbf --id=-1000000 -t FilterSpartanburgAddresses.py -o SpartanburgAddressesRaw.osm -f
+#python ../../ogr2osm/ogr2osm.py structurepoints.dbf --positive-id -t FilterSpartanburgAddresses.py -o SpartanburgAddressesRaw.osm -f
+python dropEmptyNodes.py SpartanburgAddressesRaw.osm SpartanburgAddresses.osm
+
